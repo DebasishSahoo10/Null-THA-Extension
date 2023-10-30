@@ -1,7 +1,6 @@
 # Tweet Collector Extension
 ## A Chrome Extension to get the original Tweet while replying to it (inside the reply text-area)
 ## How to use it?
-
 1. Download all the files
 2. Put them inside the folder
 3. Open Extensions tab of your broweser
@@ -16,3 +15,6 @@
 3. How to listen if the element we are trying to manipulate has been loaded or not?
 4. How to re-run the process when the route changes, especially when Twitter is a SPA.
 5. How to re-run the process where there is a hard reload of the page.
+
+## Bugs
+1. Twitter sometime change the reply box's source structure. Sometimes it is a textarea and sometimes it is a deeply nested div. And with my limited time I couldn't figure out the pattern of this chnages. So, sometime the "Collect" might not work at all but a refresh or two, will fix it.
