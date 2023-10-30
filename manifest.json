@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Twitter Tweet Collector",
+  "version": "1.0",
+  "description": "Capture the Tweet to your text box while replying to it",
+  "permissions": ["activeTab", "tabs"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
